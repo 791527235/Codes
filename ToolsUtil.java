@@ -1,8 +1,9 @@
 /**
+ *
  * @Title:ToolsUtil.java
  * @Package:cn.com.szxJavaBook.tools
  * @Description:
- * @date:2018Äê6ÔÂ1ÈÕÏÂÎç8:43:39
+ * @date:2018å¹´6æœˆ1æ—¥ä¸‹åˆ8:43:39
  * @version:v1.0
  */
 package cn.com.szxJavaBook.tools;
@@ -29,21 +30,21 @@ import szx.fileHandlePkg.FileHandler;
 
 /**
  * @ClassName:ToolsUtil
- * @Description:¹¤¾ßÀà
+ * @Description:å·¥å…·ç±»
  * @author: shenzhangx
- * @date:2018Äê6ÔÂ1ÈÕÏÂÎç8:43:39
+ * @date:2018å¹´6æœˆ1æ—¥ä¸‹åˆ8:43:39
  * 
  */
 public class ToolsUtil {
 	// private static final String tempDir =
-	// FileHandleConstant.E_ÅÌ+File.separator+FileHandleConstant.NEW+"0000666";
+	// FileHandleConstant.E_ç›˜+File.separator+FileHandleConstant.NEW+"0000666";
 	/**
 	 * @Title:extractCompress
-	 * @Description:´ÓÑ¹ËõÎÄ¼şÖĞÌáÈ¡Ä³¹Ì¶¨¸ñÊ½ÎÄ¼ş·ÅÔÚÍ¬¼¶Ä¿Â¼ÏÂ
+	 * @Description:ä»å‹ç¼©æ–‡ä»¶ä¸­æå–æŸå›ºå®šæ ¼å¼æ–‡ä»¶æ”¾åœ¨åŒçº§ç›®å½•ä¸‹
 	 * @param srcPath
-	 *            Ñ¹ËõÎÄ¼şÂ·¾¶£¨rar»òzip¸ñÊ½£©
+	 *            å‹ç¼©æ–‡ä»¶è·¯å¾„ï¼ˆraræˆ–zipæ ¼å¼ï¼‰
 	 * @param fileType
-	 *            ´ıÌáÈ¡ÎÄ¼şµÄÎÄ¼ş¸ñÊ½
+	 *            å¾…æå–æ–‡ä»¶çš„æ–‡ä»¶æ ¼å¼
 	 * @return:void
 	 * @throws Exception
 	 */
@@ -81,11 +82,11 @@ public class ToolsUtil {
 
 	/**
 	 * @Title:extractZipFile
-	 * @Description:ÌáÈ¡zipÑ¹Ëõ°üÖĞÄ³¸ñÊ½ÎÄ¼ş
+	 * @Description:æå–zipå‹ç¼©åŒ…ä¸­æŸæ ¼å¼æ–‡ä»¶
 	 * @param srcFile
-	 *            Ñ¹ËõÎÄ¼şÂ·¾¶
+	 *            å‹ç¼©æ–‡ä»¶è·¯å¾„
 	 * @param fileType
-	 *            ÎÄ¼ş¸ñÊ½
+	 *            æ–‡ä»¶æ ¼å¼
 	 * @return:void
 	 * @throws Exception
 	 */
@@ -106,7 +107,7 @@ public class ToolsUtil {
 					fileName = fileName.substring(fileName
 							.lastIndexOf(File.separator) + 1);
 				}
-				System.out.println("ÕıÔÚÌáÈ¡ÎÄ¼ş......" + fileName);
+				System.out.println("æ­£åœ¨æå–æ–‡ä»¶......" + fileName);
 				File file = new File(srcFile.getParent() + File.separator
 						+ fileName);
 				file.createNewFile();
@@ -131,16 +132,16 @@ public class ToolsUtil {
 				}
 			}
 		}
-		zipFile.close();// Èç¹û²»¹Ø£¬ºóĞøÎŞ·¨¶Ô´ËÎÄ¼ş×ö²Ù×÷
+		zipFile.close();// å¦‚æœä¸å…³ï¼Œåç»­æ— æ³•å¯¹æ­¤æ–‡ä»¶åšæ“ä½œ
 	}
 
 	/**
 	 * @Title:extractRarFile
-	 * @Description:ÌáÈ¡rarÑ¹Ëõ°üÖĞÄ³¸ñÊ½ÎÄ¼ş
+	 * @Description:æå–rarå‹ç¼©åŒ…ä¸­æŸæ ¼å¼æ–‡ä»¶
 	 * @param srcFile
-	 *            Ñ¹ËõÎÄ¼şÂ·¾¶
+	 *            å‹ç¼©æ–‡ä»¶è·¯å¾„
 	 * @param fileType
-	 *            ÎÄ¼ş¸ñÊ½
+	 *            æ–‡ä»¶æ ¼å¼
 	 * @return:void
 	 * @throws Exception
 	 */
@@ -173,7 +174,7 @@ public class ToolsUtil {
 							.substring(compressFileName
 									.lastIndexOf(File.separator) + 1);
 				}
-				System.out.println("ÕıÔÚÌáÈ¡ÎÄ¼ş......" + compressFileName);
+				System.out.println("æ­£åœ¨æå–æ–‡ä»¶......" + compressFileName);
 				String newName = srcFile.getParent() + File.separator
 						+ compressFileName;
 				File tempFile = new File(newName);
@@ -214,11 +215,11 @@ public class ToolsUtil {
 
 	/**
 	 * @Title:compress
-	 * @Description:´Ë¹¤¾ßÓÃÓÚ¸ù¾İÑ¹ËõÎÄ¼şÖĞµÄÎÄ¼şÃûÖØÃüÃûÑ¹ËõÎÄ¼ş
+	 * @Description:æ­¤å·¥å…·ç”¨äºæ ¹æ®å‹ç¼©æ–‡ä»¶ä¸­çš„æ–‡ä»¶åé‡å‘½åå‹ç¼©æ–‡ä»¶
 	 * @param srcPath
-	 *            Ñ¹ËõÎÄ¼ş(rar»òzip¸ñÊ½)
+	 *            å‹ç¼©æ–‡ä»¶(raræˆ–zipæ ¼å¼)
 	 * @param fileType
-	 *            ´ıÈ¡ÎÄ¼şÃûµÄÎÄ¼şÀàĞÍ(Ö»È¡µÚÒ»¸öÎÄ¼şÃû)
+	 *            å¾…å–æ–‡ä»¶åçš„æ–‡ä»¶ç±»å‹(åªå–ç¬¬ä¸€ä¸ªæ–‡ä»¶å)
 	 * @return:void
 	 * @throws Exception
 	 */
@@ -256,11 +257,11 @@ public class ToolsUtil {
 
 	/**
 	 * @Title:getRarName
-	 * @Description:»ñÈ¡ĞÂÃû³Æ
+	 * @Description:è·å–æ–°åç§°
 	 * @param file
-	 *            Ñ¹ËõÎÄ¼ş(rar¸ñÊ½)
+	 *            å‹ç¼©æ–‡ä»¶(raræ ¼å¼)
 	 * @param fileType
-	 *            ´ıÈ¡ÎÄ¼şÃûµÄÎÄ¼şÀàĞÍ(Ö»È¡µÚÒ»¸öÎÄ¼şÃû)
+	 *            å¾…å–æ–‡ä»¶åçš„æ–‡ä»¶ç±»å‹(åªå–ç¬¬ä¸€ä¸ªæ–‡ä»¶å)
 	 * @return:boolean
 	 * @throws Exception
 	 */
@@ -300,7 +301,7 @@ public class ToolsUtil {
 									.lastIndexOf(FileHandleConstant.DOT) + 1)
 							+ FileHandleConstant.RAR;
 				}
-				System.out.println("ÕıÔÚÖØÃüÃû......" + compressFileName);
+				System.out.println("æ­£åœ¨é‡å‘½å......" + compressFileName);
 				newName = file.getParent() + File.separator + compressFileName;
 				fh = archive.nextFileHeader();
 				break;
@@ -323,9 +324,9 @@ public class ToolsUtil {
 
 	/**
 	 * @Title:existZH
-	 * @Description:ÅĞ¶ÏÂ·¾¶ÊÇ·ñ´øÖĞÎÄ
+	 * @Description:åˆ¤æ–­è·¯å¾„æ˜¯å¦å¸¦ä¸­æ–‡
 	 * @param str
-	 *            ´øÅĞ¶ÏµÄ×Ö·û´®
+	 *            å¸¦åˆ¤æ–­çš„å­—ç¬¦ä¸²
 	 * @return:boolean
 	 * @throws
 	 */
@@ -341,11 +342,11 @@ public class ToolsUtil {
 
 	/**
 	 * @Title:getZipName
-	 * @Description:»ñÈ¡ĞÂÃû³Æ
+	 * @Description:è·å–æ–°åç§°
 	 * @param file
-	 *            Ñ¹ËõÎÄ¼ş(zip¸ñÊ½)
+	 *            å‹ç¼©æ–‡ä»¶(zipæ ¼å¼)
 	 * @param fileType
-	 *            ´ıÈ¡ÎÄ¼şÃûµÄÎÄ¼şÀàĞÍ(Ö»È¡µÚÒ»¸öÎÄ¼şÃû)
+	 *            å¾…å–æ–‡ä»¶åçš„æ–‡ä»¶ç±»å‹(åªå–ç¬¬ä¸€ä¸ªæ–‡ä»¶å)
 	 * @return:String
 	 * @throws Exception
 	 */
@@ -365,7 +366,7 @@ public class ToolsUtil {
 				break;
 			}
 		}
-		zipFile.close();// Èç¹û²»¹Ø£¬ºóĞøÎŞ·¨¶Ô´ËÎÄ¼ş×ö²Ù×÷
+		zipFile.close();// å¦‚æœä¸å…³ï¼Œåç»­æ— æ³•å¯¹æ­¤æ–‡ä»¶åšæ“ä½œ
 		fileName = FileHandler.dealFilePath(fileName);
 		if (fileName.contains(File.separator)) {
 			fileName = fileName.substring(
@@ -377,16 +378,16 @@ public class ToolsUtil {
 					fileName.lastIndexOf(FileHandleConstant.DOT) + 1)
 					+ FileHandleConstant.ZIP;
 		}
-		System.out.println("ÕıÔÚÖØÃüÃû......"
+		System.out.println("æ­£åœ¨é‡å‘½å......"
 				+ (file.getParent() + File.separator + fileName));
 		return file.getParent() + File.separator + fileName;
 	}
 
 	/**
 	 * @Title:cutFile
-	 * @Description:¼ôÇĞÒÆ¶¯ÎÄ¼ş£¨º¬ÎÄ¼ş¼Ğ£©
-	 * @param srcPath Ô´ÎÄ¼şÂ·¾¶
-	 * @param destPath Ä¿±êÎÄ¼şÄ¿Â¼Â·¾¶
+	 * @Description:å‰ªåˆ‡ç§»åŠ¨æ–‡ä»¶ï¼ˆå«æ–‡ä»¶å¤¹ï¼‰
+	 * @param srcPath æºæ–‡ä»¶è·¯å¾„
+	 * @param destPath ç›®æ ‡æ–‡ä»¶ç›®å½•è·¯å¾„
 	 * @return:void
 	 * @throws Exception 
 	 */
@@ -404,7 +405,7 @@ public class ToolsUtil {
 			for(File file : files){
 				if(file.isDirectory()){
 					cutFile(file.getAbsolutePath(),destPath);
-					FileHandler.deleteFile(file.getAbsolutePath());//É¾³ıÔ´ÎÄ¼ş
+					FileHandler.deleteFile(file.getAbsolutePath());//åˆ é™¤æºæ–‡ä»¶
 				}else{
 					cutName = destPath + File.separator +file.getName();
 					if(!file.getAbsolutePath().equalsIgnoreCase(cutName))cutFile(file,new File(cutName));
@@ -419,14 +420,14 @@ public class ToolsUtil {
 	/**
 	 * 
 	 * @Title:cutFile
-	 * @Description:¼ôÇĞÒÆ¶¯ÎÄ¼ş
-	 * @param srcFile Ô´ÎÄ¼şÂ·¾¶
-	 * @param destFile Ä¿±êÎÄ¼şÂ·¾¶
+	 * @Description:å‰ªåˆ‡ç§»åŠ¨æ–‡ä»¶
+	 * @param srcFile æºæ–‡ä»¶è·¯å¾„
+	 * @param destFile ç›®æ ‡æ–‡ä»¶è·¯å¾„
 	 * @return:void
 	 * @throws Exception
 	 */
 	public static void cutFile(File srcFile, File destFile) throws Exception{  
-		if(destFile.exists()) destFile.delete();//¸²¸ÇÊ½ 
+		if(destFile.exists()) destFile.delete();//è¦†ç›–å¼ 
 		destFile.createNewFile();
         FileOutputStream fileOutputStream = null;  
         InputStream inputStream = null;  
@@ -439,7 +440,7 @@ public class ToolsUtil {
                 fileOutputStream.write(bytes, 0, temp);  
                 fileOutputStream.flush();  
             }  
-            System.out.println("ÕıÔÚ¼ôÇĞÒÆ¶¯ÎÄ¼ş......"+srcFile.getName());
+            System.out.println("æ­£åœ¨å‰ªåˆ‡ç§»åŠ¨æ–‡ä»¶......"+srcFile.getName());
         } catch (FileNotFoundException e) {  
             throw e;  
         }catch (IOException e) {  
@@ -459,7 +460,7 @@ public class ToolsUtil {
                     e.printStackTrace();  
                 }  
             }
-            srcFile.deleteOnExit();//ÔÚ³ÌĞò½áÊøÊ±É¾³ıÎÄ¼ş
+            srcFile.deleteOnExit();//åœ¨ç¨‹åºç»“æŸæ—¶åˆ é™¤æ–‡ä»¶
         }  
     }  
 
