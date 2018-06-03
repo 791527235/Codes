@@ -1,10 +1,10 @@
-/**
+﻿/**
  *
  * @Title:ToolsUtil.java
  * @Package:cn.com.szxJavaBook.tools
  * @Description:
  * @date:2018年6月1日下午8:43:39
- * @version:v1.0
+ * @version:
  */
 package cn.com.szxJavaBook.tools;
 
