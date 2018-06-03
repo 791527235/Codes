@@ -2,7 +2,6 @@
  * @Title:ToolsUtil.java
  * @Package:cn.com.szxJavaBook.tools
  * @Description:
- * @author: shenzhangx
  * @date:2018年6月1日下午8:43:39
  * @version:v1.0
  */
