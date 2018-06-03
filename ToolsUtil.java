@@ -4,7 +4,7 @@
  * @Package:cn.com.szxJavaBook.tools
  * @Description:
  * @date:2018年6月1日下午8:43:39
- * @version:
+ * @version:v1.0
  */
 package cn.com.szxJavaBook.tools;
 
